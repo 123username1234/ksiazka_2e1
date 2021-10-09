@@ -1,0 +1,134 @@
+﻿Ksiazka tel
+
+
+Lista funkcji:
+- wyswietlanie lista nr
+- dodawanie wpisow
+- usuwac wpisy
+- edytowac wpisy
+- wyszukiwac
+- menu
+- zapis i doczyt z pliku
+
+
+Zmienne:
+-ArrayList<Rejestr> ksiazkaTelefoniczna
+
+
+----------
+class Rejestr{
+        String nazwa
+        int numer
+}
+-----------
+
+
+Menu 
+ przyjmuje 
+int 
+zwraca 
+        wybór
+
+
+------------
+Wyswietlanie
+
+
+        Wyswietla liste wpisow i stronicuje je
+        
+        
+        przyjmuje
+                nrStrony, iloscElementow
+        zwraca
+                nic
+        
+        void wyswietlanie(int,int){ ... }   
+
+
+-----------
+
+
+Wyszukiwanie
+
+
+        przyjmuje
+                nazwa
+        zwraca
+                index
+
+
+        int wyszukiwanie(string)
+                { return int }
+------------
+Edytowanie
+        przyjmuje 
+                index
+        zwraca
+                nic
+        void edytowanie(int )
+
+
+-----------
+Wyszukiwanie
+            przyjmuje:
+                    imię
+            zwraca:
+                    numer
+
+
+
+
+
+
+------------------------
+Zapis do pliku
+
+
+        przyjmuje
+                nic
+        zwraca
+                czySieUdalo
+
+
+        ZapisDoPliku(ArrayList<Rejestr>) {return bool}
+
+
+------------------------------
+Odczyt z pliku
+
+
+        przyjmuje
+                nic
+        zwraca
+                KsiazkaTelefoniczna
+        
+        OdczytZPliku() 
+                { return ArrayList<Rejestr> }
+
+
+-----------------------
+Dodawanie wpisow
+
+
+        przyjmuje String nazwa, numer
+
+
+        zwraca
+                nic
+
+
+void DodawanieWpisu(String nazwa, numer) {...}
+
+
+
+
+---------------------
+
+
+Usuwanie wpisów
+        przyjmuje index
+zwraca
+        nic
+
+
+void UsuwanieWpisu(int index)
