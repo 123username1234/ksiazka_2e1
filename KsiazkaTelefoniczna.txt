@@ -12,11 +12,11 @@ Lista funkcji:
 
 
 Zmienne:
--ArrayList<Rejestr> ksiazkaTelefoniczna
+-ArrayList<Kontakty> ksiazkaTelefoniczna
 
 
 ----------
-class Rejestr{
+class Kontakt{
         String nazwa
         int numer
 }
@@ -90,7 +90,7 @@ Zapis do pliku
                 czySieUdalo
 
 
-        ZapisDoPliku(ArrayList<Rejestr>) {return bool}
+        ZapisDoPliku(ArrayList<Kontakty>) {return bool}
 
 
 ------------------------------
@@ -103,7 +103,7 @@ Odczyt z pliku
                 KsiazkaTelefoniczna
         
         OdczytZPliku() 
-                { return ArrayList<Rejestr> }
+                { return ArrayList<Kontakty> }
 
 
 -----------------------
