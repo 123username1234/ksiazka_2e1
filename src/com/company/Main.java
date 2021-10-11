@@ -7,10 +7,10 @@ public class Main {
 
     static ArrayList<Kontakt> ksiazkaTelefoniczna;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException, IOException {
 
         ksiazkaTelefoniczna = new ArrayList<Kontakt>();
-
+        OdczytajZPliku();
     }
 
     public static void OdczytajZPliku() throws FileNotFoundException {
@@ -23,5 +23,16 @@ public class Main {
         while (sc.hasNext()){
             ksiazkaTelefoniczna.add(new Kontakt(sc.next(), sc.nextInt()));
         }
+    }
+
+    public static void ZapiszDoPliku() throws IOException {
+
+        FileWriter fw = new FileWriter("Kontakty.txt");
+
+        for (int i = 0; i < ksiazkaTelefoniczna.size(); i++) {
+            fw.write(ksiazkaTelefoniczna.get(i).nazwa + " " + ksiazkaTelefoniczna.get(i).numer + "\n");
+        }
+
+        fw.close();
     }
 }
