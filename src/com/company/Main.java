@@ -50,6 +50,7 @@ public class Main {
                     id = sc.nextInt();
                     ksiazkaTelefoniczna.remove(id);
                     ZapiszDoPliku();
+                    System.out.println("Usunięyo kontakt!");
                     break;
                 case 3:
                     System.out.println("EDYTUJ NUMER");
