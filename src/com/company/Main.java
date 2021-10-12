@@ -45,6 +45,11 @@ public class Main {
                     break;
                 case 2:
                     System.out.println("USUŃ NUMER");
+                    int id;
+                    System.out.println("Podaj index numeru: ");
+                    id = sc.nextInt();
+                    ksiazkaTelefoniczna.remove(id);
+                    ZapiszDoPliku();
                     break;
                 case 3:
                     System.out.println("EDYTUJ NUMER");
