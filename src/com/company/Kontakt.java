@@ -9,4 +9,9 @@ public class Kontakt {
         this.nazwa = nazwa;
         this.numer = numer;
     }
+
+    public void WyswietlInformacje(){
+        System.out.println("Nazwa: " + nazwa);
+        System.out.println("Numer: " + numer);
+    }
 }
